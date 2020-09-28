@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark py-3">
+    <a class="navbar-brand" href="#">Portal de Viagens</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    (click)="collapsed = !collapsed;"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" [ngbCollapse]="collapsed">
+    <div class="navbar-nav">
+      <a class="nav-link" href="#">Destinos</a>
+      <a class="nav-link" href="#">Valores</a>
+      <a class="nav-link" href="#">Contato</a>
+    </div>
+  </div>
+</nav>
